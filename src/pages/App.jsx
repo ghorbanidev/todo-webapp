@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css"
-import Alert from './components/shared/alert';
-import { Sidebar } from "./components/sidebar";
-import { AddTask, TaskListItem } from "./components/task";
+import Alert from '../components/shared/alert';
+import { Sidebar } from "../components/sidebar";
+import { AddTask, TaskListItem } from "../components/task";
 
 
 const App = () => {
