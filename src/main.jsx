@@ -5,6 +5,7 @@ import { store } from './stores/root.store.js'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import EditTask from './pages/EditTask.jsx'
+import ShowTask from './pages/ShowTask.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,7 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path='/edit/:id' element={<EditTask />} />
-          {/* <Route path='/task/:id' element={<ShowTask />} /> */}
+          <Route path='/task/:id' element={<ShowTask />} />
         </Routes>
       </BrowserRouter>
     </Provider>
