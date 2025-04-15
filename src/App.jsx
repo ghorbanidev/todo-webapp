@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css"
 import Alert from './components/shared/alert';
 import { Sidebar } from "./components/sidebar";
+import { AddTask } from "./components/task";
 
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
             <h1 className="hidden text-2xl font-bold text-blue-500 lg:inline-block mb-6">Task Manager</h1>
             {/* Add Task */}
             <div className="flex flex-col sm:flex-row items-center gap-3 lg:mb-6">
-              {/* <AddTask Component/> */}
+              <AddTask/>
             </div>
           </div>
           {/* Task List */}
